@@ -106,8 +106,8 @@ print("*"*80)
 # Output: each letter and its corresponding occurrence in alphabetical order
 #    Done on lines 76-77
 # Output which letter occurred the most 
-#    Done on lines 80-82
+#    Done on lines 80-81
 # Output which letter occurred the least 
-#    Done on lines 84-86
+#    Done on lines 84-85
 # Output what the percentage of the string each character is, again in alphabetical
-#    Done on lines 88-92
+#    Done on lines 88-91
