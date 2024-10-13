@@ -61,7 +61,7 @@ zkdenxczyooloczcaahnkehbwimvieedpdlqfafbqvxvfmvabd
 """
 random_string = random_string.replace("\n","") #remove all newline characters
 print(len(random_string)) # Print out the size for reference 
-
+print("*"*80)
 # Above is a string with 2500 characters.
 # Create a program that goes through and counts the occurrence of each character, excluding \n using a  dictionary
 character_count = {}
@@ -71,12 +71,17 @@ for character in random_string:
     else:
         character_count[character] = 1
 print(character_count)
+print("*"*80)
 # Output each letter and its corresponding occurrence in alphabetical order
 for key, value in sorted(character_count.items()):
     print(f"{key} {value}")
+print("*"*80)
 # Output which letter occurred the most 
+most_occurred = max(character_count, key=character_count.get)
 # Output which letter occurred the least 
+least_occurred = min(character_count, key=character_count.get)
 # Output what the percentage of the string each character is, again in alphabetical
+
 
 #Tips and trick:
 # You can iterate through strings like you would a list
@@ -91,17 +96,11 @@ for key, value in sorted(character_count.items()):
 #Will need to first declare a dictionary 
 
 # Output: each letter and its corresponding occurrence in alphabetical order
-
-print("*"*80)
+#    Done on lines 76 and 77
 # Output which letter occurred the most 
-
-most_occurred = ""
-least_occurred = ""
-
 print(f"The letter that occurred the most is {most_occurred}")
 print("*"*80)
 # Output which letter occurred the least 
 print(f"The letter that occurred the most is {least_occurred}")
 print("*"*80)
-
 # Output what the percentage of the string each character is, again in alphabetical
