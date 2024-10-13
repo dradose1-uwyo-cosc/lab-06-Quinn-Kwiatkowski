@@ -78,10 +78,18 @@ for key, value in sorted(character_count.items()):
 print("*"*80)
 # Output which letter occurred the most 
 most_occurred = max(character_count, key=character_count.get)
+print(f"The letter that occurred the most is {most_occurred}")
+print("*"*80)
 # Output which letter occurred the least 
 least_occurred = min(character_count, key=character_count.get)
+print(f"The letter that occurred the most is {least_occurred}")
+print("*"*80)
 # Output what the percentage of the string each character is, again in alphabetical
-
+character_length = len(random_string)
+for character in sorted(character_count.keys()):
+    percentage_character = (character_count[character]/character_length)*100
+    print(f"{character} is {percentage_character:.2f}% of the list")
+print("*"*80)
 
 #Tips and trick:
 # You can iterate through strings like you would a list
@@ -96,11 +104,10 @@ least_occurred = min(character_count, key=character_count.get)
 #Will need to first declare a dictionary 
 
 # Output: each letter and its corresponding occurrence in alphabetical order
-#    Done on lines 76 and 77
+#    Done on lines 76-77
 # Output which letter occurred the most 
-print(f"The letter that occurred the most is {most_occurred}")
-print("*"*80)
+#    Done on lines 80-82
 # Output which letter occurred the least 
-print(f"The letter that occurred the most is {least_occurred}")
-print("*"*80)
+#    Done on lines 84-86
 # Output what the percentage of the string each character is, again in alphabetical
+#    Done on lines 88-92
